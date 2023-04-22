@@ -24,7 +24,7 @@ requirements:
   build:
     - {{ posix }}zip               # [win]
   host:
-    - r-base
+    - r-base  {{ r_version }}
     - r-r6
     - r-callr >=3.1.1.9000
     - r-cli >=3.0.0
@@ -38,7 +38,7 @@ requirements:
     - r-withr
     - r-xopen
   run:
-    - r-base
+    - r-base  {{ r_version }}
     - r-r6
     - r-callr >=3.1.1.9000
     - r-cli >=3.0.0
